@@ -150,3 +150,20 @@ function getSelectedColor(e) {
     currentColorDiv = document.getElementsByClassName("current-color");
     currentColorDiv[0].style.backgroundColor = div_color;
 }
+
+// Modal
+let modal = document.getElementById("credsModal");
+let btn = document.getElementById("creds-btn");
+let span = document.getElementsByClassName("close")[0];
+btn.addEventListener("click", function() {
+    modal.style.display = "block";
+})
+span.addEventListener("click", function() {
+    modal.style.display = "none";
+})
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+}
