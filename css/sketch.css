@@ -5,6 +5,7 @@
     background-color: aliceblue;
     /* padding: 1rem; */
     border: 1px solid #ECECEC;
+    cursor: url(../images/paint-brush-artist-svgrepo-com.svg), auto;
 }
 .title-container {
     display: flex;
@@ -16,6 +17,9 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+.sketch-area-container {
+    flex: 1;
 }
 .sketch-area {
     /* border: 2px solid blue; */
@@ -38,7 +42,30 @@
     background: #f4f3f3;
     box-shadow: 0px 2px 12px -4px black;
     margin: 4rem 0 1rem 0;
+    cursor: pointer;
 }
 .grid-info {
     padding-bottom: 1rem;
+}
+
+/* color picker */
+.colorpicker-container {
+    flex: 0.59;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    height: 500px;
+    align-items: center;
+}
+.color-picker-canvas {
+    width: 50%;
+    height: 30%;
+    /* border-radius: 50%; */
+}
+.current-color {
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem;
+    box-shadow: 0px 2px 12px -4px black;
+    background-color: rgba(0, 0, 0, 0.1);
 }
